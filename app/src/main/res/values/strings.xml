@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SMSCrypt</string>
+    <string name="title_chats">Chats</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="chats">Messages</string>
+    <string name="qr_code_for_connection">QR code for connection</string>
+    <string name="scan">Scan</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="regenerate_code">regenerate code</string>
+    <string name="generate">Generate</string>
+    <string name="retry_auth">Retry Auth</string>
+    <string name="phone_number">Phone (Sim 1)</string>
+    <string name="alias">Local Alias</string>
+    <string name="encryption_key_can_be_blank">Encryption key</string>
+    <string name="_continue">Continue</string>
+    <string name="master_enc_warn">The Master Encryption key isn\'t stored into system for security reasons, and you have to enter it every time you open/resume the application. Also, it\'s non-recoverable, means if you forget your master encryption key you have to clear data of the application to reuse and all past messages will be unrecoverable.</string>
+    <string name="reason">Reason</string>
+    <string name="pair_init_ins">Scan this from other device to initiate pairing</string>
+    <string name="connect_with_bluetooth">Connect with bluetooth</string>
+    <string name="instructions_x">Instructions : \n\nLet the other device scan this QR or press \'Scan\' to scan QR code of other device to start pairing, then choose a mutually shared key and that will be your encryption key for specific conversation, which will be stored securely in each other devices encrypted by master encryption key. You can also use BLE or WIFI tethering to pair.\n\nAfter pairing we\'ll send an pairing SMS to receiver who\'ll decrypt the conversation with the shared key to confirm successful pair!</string>
+</resources>
