@@ -33,6 +33,22 @@
         app:layout_constraintBottom_toTopOf="@+id/qr_view"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_X" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/wait_qr"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@raw/sign_up"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/qr_view"
+        app:layout_constraintEnd_toEndOf="@+id/qr_view"
+        app:layout_constraintStart_toStartOf="@+id/qr_view"
+        app:layout_constraintTop_toTopOf="@+id/qr_view"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/wait_qr"
+        app:lottie_renderMode="hardware"
+        app:lottie_speed="0.5" />
+
     <com.joooonho.SelectableRoundedImageView
         android:id="@+id/qr_view"
         android:layout_width="250dp"
@@ -50,11 +66,11 @@
         app:sriv_right_top_corner_radius="8dip" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/conn_ble"
+        android:id="@+id/gen_qr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/connect_with_bluetooth"
-        android:src="@drawable/ic_ble"
+        android:src="@drawable/ic_setup"
         app:backgroundTint="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="@+id/scan_button"
         app:layout_constraintEnd_toStartOf="@+id/scan_button"
@@ -63,12 +79,12 @@
         app:tint="@android:color/white" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/conn_wifi"
+        android:id="@+id/enter_manual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:backgroundTint="@color/reds"
         android:contentDescription="@string/connect_with_bluetooth"
-        android:src="@drawable/ic_wifi_mode"
-        app:backgroundTint="@color/purple_700"
+        android:src="@drawable/ic_manual"
         app:layout_constraintBottom_toBottomOf="@+id/scan_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/scan_button"
@@ -91,14 +107,17 @@
         app:layout_constraintTop_toBottomOf="@+id/qr_view"
         app:layout_constraintVertical_bias="0.25" />
 
-    <TextView
-        android:layout_width="match_parent"
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/ins_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="@string/instructions_x"
-        android:textSize="11sp"
+        android:text="@string/instruction"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:backgroundTint="@color/teal_700"
+        app:icon="@drawable/ic_inst"
+        app:iconTint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scan_button" />

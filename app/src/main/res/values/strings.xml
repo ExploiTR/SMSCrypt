@@ -18,5 +18,6 @@
     <string name="reason">Reason</string>
     <string name="pair_init_ins">Scan this from other device to initiate pairing</string>
     <string name="connect_with_bluetooth">Connect with bluetooth</string>
-    <string name="instructions_x">Instructions : \n\nLet the other device scan this QR or press \'Scan\' to scan QR code of other device to start pairing, then choose a mutually shared key and that will be your encryption key for specific conversation, which will be stored securely in each other devices encrypted by master encryption key. You can also use BLE or WIFI tethering to pair.\n\nAfter pairing we\'ll send an pairing SMS to receiver who\'ll decrypt the conversation with the shared key to confirm successful pair!</string>
+    <string name="instructions_x">Instructions : \n\nPress generate button (blue) to choose a mutually shared encryption key and generate QR code then let the other device scan this QR to pair or press \'Scan\' to scan QR code of other device to start pairing, the encryption key will be unique for each conversation (should be), which will be stored securely in each other devices encrypted by master encryption key.\n\nOr you can press manual entry button (red) for manual setup.\n\nAfter pairing we\'ll send an pairing SMS to receiver who\'ll decrypt the conversation with the shared key to confirm successful pair!</string>
+    <string name="instruction">Instruction</string>
 </resources>
