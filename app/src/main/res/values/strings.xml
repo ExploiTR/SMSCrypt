@@ -2,7 +2,6 @@
     <string name="app_name">SMSCrypt</string>
     <string name="title_chats">Chats</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="chats">Messages</string>
     <string name="qr_code_for_connection">QR code for connection</string>
     <string name="scan">Scan</string>
@@ -20,4 +19,10 @@
     <string name="connect_with_bluetooth">Connect with bluetooth</string>
     <string name="instructions_x">Instructions : \n\nPress generate button (blue) to choose a mutually shared encryption key and generate QR code then let the other device scan this QR to pair or press \'Scan\' to scan QR code of other device to start pairing, the encryption key will be unique for each conversation (should be), which will be stored securely in each other devices encrypted by master encryption key.\n\nOr you can press manual entry button (red) for manual setup.\n\nAfter pairing we\'ll send an pairing SMS to receiver who\'ll decrypt the conversation with the shared key to confirm successful pair!</string>
     <string name="instruction">Instruction</string>
+    <string name="_919932616269">+911234567890</string>
+    <string name="demo_name">Mr. Chiao Guao</string>
+    <string name="title_pairing">Pairing</string>
+    <string name="pairing_status">Pairing Status</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="pair_contacts">Pair Contacts</string>
 </resources>

@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="app.exploitr.sec.scrypt">
 
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <queries>
         <intent>
@@ -23,8 +19,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SMSCrypt"
-        tools:targetApi="31">
+        android:theme="@style/Theme.SMSCrypt">
         <activity
             android:name="app.exploitr.sec.scrypt.ui.Welcome"
             android:exported="true">
