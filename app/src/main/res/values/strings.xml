@@ -25,4 +25,5 @@
     <string name="pairing_status">Pairing Status</string>
     <string name="contact_info">Contact Info</string>
     <string name="pair_contacts">Pair Contacts</string>
+    <string name="grant_permission">Grant Permission</string>
 </resources>
