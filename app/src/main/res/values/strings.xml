@@ -11,7 +11,7 @@
     <string name="retry_auth">Retry Auth</string>
     <string name="phone_number">Phone (Sim 1)</string>
     <string name="alias">Local Alias</string>
-    <string name="encryption_key_can_be_blank">Encryption key</string>
+    <string name="encryption_key_can_be_blank">Master Password</string>
     <string name="_continue">Continue</string>
     <string name="master_enc_warn">The Master Encryption key isn\'t stored into system for security reasons, and you have to enter it every time you open/resume the application. Also, it\'s non-recoverable, means if you forget your master encryption key you have to clear data of the application to reuse and all past messages will be unrecoverable.</string>
     <string name="reason">Reason</string>
