@@ -26,4 +26,5 @@
     <string name="contact_info">Contact Info</string>
     <string name="pair_contacts">Pair Contacts</string>
     <string name="grant_permission">Grant Permission</string>
+    <string name="reset">Reset</string>
 </resources>
