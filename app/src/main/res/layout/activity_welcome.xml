@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Welcome">
+    tools:context=".ui.activities.Welcome">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/loading_welcome"
@@ -54,11 +54,12 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/alias_layout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="48dp"
         android:hint="@string/alias"
+        android:padding="2dp"
         android:visibility="invisible"
         app:layout_constraintTop_toBottomOf="@+id/sign_up_anim"
         app:startIconDrawable="@drawable/ic_alias">
@@ -74,10 +75,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/phone_layout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/phone_number"
+        android:padding="2dp"
         android:visibility="invisible"
         app:layout_constraintTop_toBottomOf="@+id/alias_layout"
         app:startIconDrawable="@drawable/ic_phone">
@@ -93,10 +95,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/master_pass_layout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/encryption_key_can_be_blank"
+        android:padding="2dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +116,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/pwd_warn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawablePadding="4dp"
@@ -124,10 +127,12 @@
         android:visibility="invisible"
         app:drawableStartCompat="@drawable/ic_warning"
         app:drawableTint="@android:color/holo_red_dark"
-        app:layout_constraintTop_toBottomOf="@+id/master_pass_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/master_pass_layout"
+        tools:layout_editor_absoluteX="0dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/continue_next"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableEnd="@drawable/ic_next"
@@ -137,6 +142,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/pwd_warn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

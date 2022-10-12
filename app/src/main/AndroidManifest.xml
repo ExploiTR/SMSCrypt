@@ -24,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SMSCrypt">
         <activity
-            android:name="app.exploitr.sec.scrypt.ui.Welcome"
+            android:name="app.exploitr.sec.scrypt.ui.activities.Welcome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
