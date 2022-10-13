@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1805" />
+        <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/drawable/back_shape_solid.xml" value="0.2795" />
+        <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.2795" />
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/drawable/ic_ble.xml" value="0.351" />
+        <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/drawable/ic_contact.xml" value="0.2795" />
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/drawable/ic_ender_code.xml" value="0.3505" />
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1805" />
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/drawable/ic_pair.xml" value="0.1805" />
@@ -16,6 +19,7 @@
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/layout/fragment_notifications.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/layout/fragment_pairing.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/layout/list_contact_item.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/layout/list_message_short_item.xml" value="0.5" />
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/layout/master_pwd_rein.xml" value="0.5" />
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/layout/scan_view.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/ExploiTR/Documents/GitHub/SMSCrypt/app/src/main/res/menu/bottom_nav_menu.xml" value="0.35052083333333334" />
