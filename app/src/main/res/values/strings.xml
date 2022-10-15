@@ -30,4 +30,5 @@
     <string name="shows_if_the_sms_channel_is_secure">Shows if the sms channel is secure</string>
     <string name="demo_message">In a free hour, when our power of choice is untrammelled and when nothing prevents us to do what we like best, every pleasure is to be welcomed and every pain avoided.</string>
     <string name="a_dot_that_shows_if_message_was_read_or_not">a dot that shows if message was read or not</string>
+    <string name="contacts">Contacts</string>
 </resources>

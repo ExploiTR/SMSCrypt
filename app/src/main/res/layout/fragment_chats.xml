@@ -33,13 +33,30 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_messages"
+        app:lottie_renderMode="hardware"
+        app:lottie_speed="1" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chats_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:scrollbars="vertical"
-        android:layout_marginBottom="56dp"
         android:verticalScrollbarPosition="right"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
