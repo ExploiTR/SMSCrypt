@@ -24,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SMSCrypt">
         <activity
-            android:name="app.exploitr.sec.scrypt.ui.activities.Welcome"
+            android:name="app.exploitr.sec.scrypt.ui.general.Welcome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,9 +33,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activities.MainActivity"
+            android:name=".ui.general.MainActivity"
             android:exported="false" />
-
+        <activity
+            android:name=".ui.messaging.MessagingThread"
+            android:exported="false" />
     </application>
 
 </manifest>
