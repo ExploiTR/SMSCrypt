@@ -50,8 +50,32 @@
         android:scrollbarStyle="outsideInset"
         android:scrollbars="vertical"
         android:verticalScrollbarPosition="right"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintBottom_toTopOf="@+id/clickToPairContainer"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/clickToPairContainer"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/curve_layout_bottom_bg"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clickToPair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:drawableStart="@drawable/ic_enable_security"
+            android:drawablePadding="8dp"
+            android:drawableTint="#FFFFFF"
+            android:text="@string/click_to_pair"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textStyle="normal" />
+    </FrameLayout>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linearLayoutCompat"
@@ -81,20 +105,26 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:hint="@string/text_message"
-            android:padding="2dp"
+            app:counterTextAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:endIconDrawable="@drawable/ic_emoji"
             app:layout_constraintTop_toBottomOf="@+id/sign_up_anim"
-            app:startIconDrawable="@drawable/ic_alias">
+            app:startIconDrawable="@drawable/ic_sms">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/alias_input"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="4dp"
-                android:text="@string/master_enc_warn"
-                android:textSize="14sp"
-                android:inputType="textPersonName" />
+                android:ellipsize="end"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="1"
+                android:scrollbars="vertical"
+                android:textSize="14sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 

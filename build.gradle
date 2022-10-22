@@ -16,3 +16,16 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+task cleanIcons(){
+    def localProperties = new File(rootDir, "local.properties")
+    if (localProperties.exists()) {
+        Properties properties = new Properties()
+        localProperties.withInputStream { instr ->
+            properties.load(instr)
+        }
+        def sdkDir = properties.getProperty('sdk.dir')
+        def iconsDir = sdkDir + "\\icons"
+        delete iconsDir
+    }
+}
