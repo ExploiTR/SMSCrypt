@@ -7,7 +7,7 @@ Exceptional security, safe messaging.
 
 ## Contributing
 
-We welcome contributions to SMSCrypt. Please follow our [Contributing Guidelines](CONTRIBUTING.md).
+Contributions are welcome.
 
 ## License
 
