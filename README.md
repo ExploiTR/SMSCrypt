@@ -1,13 +1,9 @@
 # SMSCrypt
 Exceptional security, safe messaging. 
 
-## Features
-
-- **End-to-End Encryption**: Messages are encrypted on your device and decrypted on the recipient's device.
-
 ## Security
 
-- **End-to-End Encryption**: All messages are encrypted and decrypted only on the respective devices.
+- **End-to-End Encryption**: All messages are encrypted and decrypted only on the respective devices, fully serverless.
 
 ## Contributing
 
