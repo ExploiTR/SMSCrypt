@@ -12,4 +12,4 @@ Contributions are welcome.
 
 ## License
 
-We'll See.
+Apache 2.0
