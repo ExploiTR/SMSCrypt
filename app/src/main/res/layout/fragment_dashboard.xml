@@ -24,106 +24,62 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-
-    <!--
-
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/pair_init_ins"
-        app:layout_constraintBottom_toTopOf="@+id/qr_view"
+        android:layout_margin="8dp"
+        android:text="@string/filter_sms_messages"
+        android:maxEms="15"
+        app:layout_constraintBottom_toBottomOf="@+id/toggle_sms_filter"
+        app:layout_constraintEnd_toStartOf="@+id/toggle_sms_filter"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toggle_sms_filter" />
+
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:id="@+id/toggle_sms_filter"
+        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_X" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:maxEms="15"
+        android:maxLines="2"
+        android:text="@string/filter_sms_based_on_keywords_database"
+        app:layout_constraintBottom_toBottomOf="@+id/toggle_rule_sms_filter"
+        app:layout_constraintEnd_toStartOf="@+id/toggle_rule_sms_filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toggle_rule_sms_filter" />
+
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:id="@+id/toggle_rule_sms_filter"
+        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggle_sms_filter" />
+
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/wait_qr"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@raw/sign_up"
+        android:alpha="0.2"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/qr_view"
-        app:layout_constraintEnd_toEndOf="@+id/qr_view"
-        app:layout_constraintStart_toStartOf="@+id/qr_view"
-        app:layout_constraintTop_toTopOf="@+id/qr_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_X"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/wait_qr"
+        app:lottie_rawRes="@raw/secure_loading"
         app:lottie_renderMode="hardware"
-        app:lottie_speed="0.5" />
+        app:lottie_speed="1" />
 
-    <com.joooonho.SelectableRoundedImageView
-        android:id="@+id/qr_view"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:contentDescription="@string/qr_code_for_connection"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
-        app:sriv_left_bottom_corner_radius="8dip"
-        app:sriv_left_top_corner_radius="8dip"
-        app:sriv_right_bottom_corner_radius="8dip"
-        app:sriv_right_top_corner_radius="8dip" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/gen_qr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/connect_with_bluetooth"
-        android:src="@drawable/ic_setup"
-        app:backgroundTint="@color/dark_blue"
-        app:layout_constraintBottom_toBottomOf="@+id/scan_button"
-        app:layout_constraintEnd_toStartOf="@+id/scan_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/scan_button"
-        app:tint="@android:color/white" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/enter_manual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:backgroundTint="@color/reds"
-        android:contentDescription="@string/connect_with_bluetooth"
-        android:src="@drawable/ic_manual"
-        app:layout_constraintBottom_toBottomOf="@+id/scan_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/scan_button"
-        app:layout_constraintTop_toTopOf="@+id/scan_button"
-        app:tint="@android:color/white" />
-
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/scan_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/scan"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:backgroundTint="@color/teal_700"
-        app:icon="@drawable/ic_scan"
-        app:iconTint="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qr_view"
-        app:layout_constraintVertical_bias="0.25" />
-
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/ins_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/instruction"
-        android:layout_marginTop="8dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:backgroundTint="@color/teal_700"
-        app:icon="@drawable/ic_inst"
-        app:iconTint="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scan_button" />
-
--->
 </androidx.constraintlayout.widget.ConstraintLayout>

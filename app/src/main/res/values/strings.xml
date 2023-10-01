@@ -37,4 +37,7 @@
     <string name="text_message">Text Message</string>
     <string name="click_to_pair">Click to pair</string>
     <string name="_00_00">Wed 00:00</string>
+    <string name="re_enter_km_key">\"You resumed/opened the application, master encryption key must be re-entered.\"</string>
+    <string name="filter_sms_messages">Filter SMS Messages</string>
+    <string name="filter_sms_based_on_keywords_database">Filter SMS based on keywords database.</string>
 </resources>
