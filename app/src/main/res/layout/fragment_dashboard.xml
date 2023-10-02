@@ -29,8 +29,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="@string/filter_sms_messages"
         android:maxEms="15"
+        android:text="@string/filter_sms_messages"
         app:layout_constraintBottom_toBottomOf="@+id/toggle_sms_filter"
         app:layout_constraintEnd_toStartOf="@+id/toggle_sms_filter"
         app:layout_constraintHorizontal_bias="0"
@@ -40,8 +40,8 @@
     <androidx.appcompat.widget.AppCompatToggleButton
         android:id="@+id/toggle_sms_filter"
         android:layout_width="wrap_content"
-        android:layout_margin="8dp"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_X" />
 
@@ -50,22 +50,58 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:layout_constraintHorizontal_bias="0"
         android:maxEms="15"
         android:maxLines="2"
         android:text="@string/filter_sms_based_on_keywords_database"
         app:layout_constraintBottom_toBottomOf="@+id/toggle_rule_sms_filter"
         app:layout_constraintEnd_toStartOf="@+id/toggle_rule_sms_filter"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toggle_rule_sms_filter" />
 
     <androidx.appcompat.widget.AppCompatToggleButton
         android:id="@+id/toggle_rule_sms_filter"
         android:layout_width="wrap_content"
-        android:layout_margin="8dp"
         android:layout_height="wrap_content"
+        android:layout_margin="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toggle_sms_filter" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:maxEms="15"
+        android:maxLines="2"
+        android:text="@string/filter_sms_based_on_contacts"
+        app:layout_constraintBottom_toBottomOf="@+id/toggle_contact_based_sms_filter"
+        app:layout_constraintEnd_toStartOf="@+id/toggle_contact_based_sms_filter"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toggle_contact_based_sms_filter" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="15"
+        android:maxLines="2"
+        android:text="@string/cpu_intensive_filtering"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.appcompat.widget.AppCompatToggleButton
+        android:id="@+id/toggle_contact_based_sms_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggle_rule_sms_filter" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="250dp"
