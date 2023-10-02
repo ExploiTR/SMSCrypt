@@ -102,5 +102,6 @@
         <item>credited</item>
         <item>debited</item>
         <item>payment</item>
+        <item>jp7</item>
     </string-array>
 </resources>
