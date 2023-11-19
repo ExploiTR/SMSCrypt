@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="keywords">
+        <item>discount</item>
+        <item>sale</item>
+        <item>alert</item>
+        <item>urgent</item>
+        <item>suspicious</item>
+        <item>verify</item>
+        <item>your account has been compromised</item>
+        <item>your account will be locked</item>
+        <item>account suspended</item>
+        <item>security breach</item>
+        <item>unauthorized access</item>
+        <item>bank account suspended</item>
+        <item>lottery winner</item>
+        <item>you\'ve won</item>
+        <item>claim your prize</item>
+        <item>inheritance</item>
+        <item>urgent attention required</item>
+        <item>emergency</item>
+        <item>one-time password (OTP) required</item>
+        <item>OTP required</item>
+        <item>click the link</item>
+        <item>account verification</item>
+        <item>update your information</item>
+        <item>social security number</item>
+        <item>credit card compromised</item>
+        <item>your payment has failed</item>
+        <item>confirm your identity</item>
+        <item>government grant</item>
+        <item>refund</item>
+        <item>discount</item>
+        <item>sale</item>
+        <item>offer</item>
+        <item>promo</item>
+        <item>save</item>
+        <item>free</item>
+        <item>buy one get one</item>
+        <item>limited time</item>
+        <item>exclusive</item>
+        <item>deal</item>
+        <item>special</item>
+        <item>coupon</item>
+        <item>clearance</item>
+        <item>win</item>
+        <item>prize</item>
+        <item>call now</item>
+        <item>subscribe</item>
+        <item>unsubscribe</item>
+        <item>call to action</item>
+        <item>visit our website</item>
+        <item>click here</item>
+        <item>order now</item>
+        <item>act fast</item>
+        <item>lowest price</item>
+        <item>amazing</item>
+        <item>opportunity</item>
+        <item>best price</item>
+        <item>save big</item>
+        <item>50% off</item>
+        <item>claim your</item>
+        <item>cash back</item>
+        <item>guaranteed</item>
+        <item>instant</item>
+        <item>double your</item>
+        <item>earn</item>
+        <item>free trial</item>
+        <item>congratulations</item>
+        <item>win a trip</item>
+        <item>special offer</item>
+        <item>job offer</item>
+        <item>mbactivate</item>
+        <item>upiact</item>
+        <item>hdfcupi</item>
+        <item>sbireg</item>
+        <item>sbiupi</item>
+        <item>yonoreg</item>
+        <item>phonepe-sms-verify</item>
+        <item>upi</item>
+        <item>payment</item>
+        <item>membership</item>
+        <item>rewards</item>
+        <item>flat 10% off</item>
+        <item>flat 15% off</item>
+        <item>flat 20% off</item>
+        <item>flat 25% off</item>
+        <item>flat 30% off</item>
+        <item>flat 40% off</item>
+        <item>flat 50% off</item>
+        <item>flat 60% off</item>
+        <item>flat 70% off</item>
+        <item>flat 75% off</item>
+        <item>use code</item>
+        <item>call</item>
+        <item>package</item>
+        <item>inr </item>
+        <item>rs</item>
+        <item>balance</item>
+        <item>donating</item>
+        <item>donation</item>
+        <item>credited</item>
+        <item>debited</item>
+        <item>payment</item>
+        <item>jp7</item>
+    </string-array>
+</resources>

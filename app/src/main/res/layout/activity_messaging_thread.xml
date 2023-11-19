@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.messaging.MessagingThread">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/receiver_img"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_contact"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contact_name_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:text="@string/sample_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            app:srcCompat="@drawable/secure_channel_disabled" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_chats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chats_"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="6dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintBottom_toTopOf="@+id/clickToPairContainer"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/clickToPairContainer"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/curve_layout_bottom_bg"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clickToPair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:drawableStart="@drawable/ic_enable_security"
+            android:drawablePadding="8dp"
+            android:drawableTint="#FFFFFF"
+            android:text="@string/click_to_pair"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textStyle="normal" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_content" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_emoji" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/alias_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:hint="@string/text_message"
+            app:counterTextAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:endIconDrawable="@drawable/ic_emoji"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_anim"
+            app:startIconDrawable="@drawable/ic_sms">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/alias_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:ellipsize="end"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="1"
+                android:scrollbars="vertical"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_send" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

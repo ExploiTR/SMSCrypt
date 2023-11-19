@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.general.Welcome">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_welcome"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@raw/sign_up"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/retry_auth"
+        app:layout_constraintEnd_toEndOf="@+id/retry_auth"
+        app:layout_constraintStart_toStartOf="@+id/retry_auth"
+        app:layout_constraintTop_toTopOf="@+id/retry_auth"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading"
+        app:lottie_renderMode="hardware"
+        app:lottie_speed="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/retry_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_fingerprint"
+        android:drawableTint="@color/white"
+        android:text="@string/retry_auth"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/sign_up_anim"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@raw/sign_up"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/sign_up"
+        app:lottie_renderMode="hardware"
+        app:lottie_speed="1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/alias_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hint="@string/alias"
+        android:padding="2dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_anim"
+        app:startIconDrawable="@drawable/ic_alias">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/alias_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:inputType="textPersonName"
+            android:maxLength="13" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:padding="2dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/alias_layout"
+        app:startIconDrawable="@drawable/ic_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:inputType="phone"
+            android:maxLength="13" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/master_pass_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/encryption_key_can_be_blank"
+        android:padding="2dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_layout"
+        app:startIconDrawable="@drawable/ic_enc_key">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/master_pass_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:inputType="textPassword"
+            android:maxLength="13" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/pwd_warn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:padding="4dp"
+        android:text="@string/master_enc_warn"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="11sp"
+        android:visibility="invisible"
+        app:drawableStartCompat="@drawable/ic_warning"
+        app:drawableTint="@android:color/holo_red_dark"
+        app:layout_constraintTop_toBottomOf="@+id/master_pass_layout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continue_next"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_next"
+        android:drawableTint="@color/white"
+        android:text="@string/_continue"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_warn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

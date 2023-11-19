@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">SMSCrypt</string>
+    <string name="title_chats">Chats</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="chats">Messages</string>
+    <string name="qr_code_for_connection">QR code for connection</string>
+    <string name="scan">Scan</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="regenerate_code">regenerate code</string>
+    <string name="generate">Generate</string>
+    <string name="retry_auth">Retry Auth</string>
+    <string name="phone_number">Phone (Sim 1)</string>
+    <string name="alias">Local Alias</string>
+    <string name="encryption_key_can_be_blank">Master Password</string>
+    <string name="_continue">Continue</string>
+    <string name="master_enc_warn">The Master Encryption key isn\'t stored into system for security reasons, and you have to enter it every time you open/resume the application. Also, it\'s non-recoverable, means if you forget your master encryption key you have to clear data of the application to reuse and all past messages will be unrecoverable.</string>
+    <string name="reason">Reason</string>
+    <string name="pair_init_ins">Scan this from other device to initiate pairing</string>
+    <string name="connect_with_bluetooth">Connect with bluetooth</string>
+    <string name="instructions_x">Instructions : \n\nPress generate button (blue) to choose a mutually shared encryption key and generate QR code then let the other device scan this QR to pair or press \'Scan\' to scan QR code of other device to start pairing, the encryption key will be unique for each conversation (should be), which will be stored securely in each other devices encrypted by master encryption key.\n\nOr you can press manual entry button (red) for manual setup.\n\nAfter pairing we\'ll send an pairing SMS to receiver who\'ll decrypt the conversation with the shared key to confirm successful pair!</string>
+    <string name="instruction">Instruction</string>
+    <string name="_919932616269">+911234567890</string>
+    <string name="demo_name">Mr. Chiao Guao</string>
+    <string name="title_pairing">Pairing</string>
+    <string name="pairing_status">Pairing Status</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="pair_contacts">Pair Contacts</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="reset">Reset</string>
+    <string name="shows_if_the_sms_channel_is_secure">Shows if the sms channel is secure</string>
+    <string name="demo_message">In a free hour, when our power of choice is untrammelled and when nothing prevents us to do what we like best, every pleasure is to be welcomed and every pain avoided.</string>
+    <string name="a_dot_that_shows_if_message_was_read_or_not">a dot that shows if message was read or not</string>
+    <string name="contacts">Contacts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sample_name">Sample Name</string>
+    <string name="text_message">Text Message</string>
+    <string name="click_to_pair">Click to pair</string>
+    <string name="_00_00">Wed 00:00</string>
+    <string name="re_enter_km_key">\"You resumed/opened the application, master encryption key must be re-entered.\"</string>
+    <string name="filter_sms_messages">Standard SMS filter</string>
+    <string name="filter_sms_based_on_keywords_database">Filter spam/promotional/transactional messages. </string>
+    <string name="filter_sms_based_on_contacts">Show SMS only from contacts</string>
+    <string name="cpu_intensive_filtering">[CPU Intensive Filtering]</string>
+</resources>
