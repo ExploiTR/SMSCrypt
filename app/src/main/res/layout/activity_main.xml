@@ -42,4 +42,20 @@
         app:navGraph="@navigation/mobile_navigation"
         tools:ignore="FragmentTagUsage" />
 
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/startNewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/starts_a_new_conversation"
+        android:text="@string/start_chat"
+        android:textAllCaps="false"
+        app:icon="@drawable/start_new_conv"
+        app:iconSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fake_bar"
+        app:layout_constraintVertical_bias="0.975" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
