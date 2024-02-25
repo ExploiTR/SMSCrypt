@@ -14,7 +14,7 @@
 .cxx
 local.properties
 google-services.json
-.idea/
+.idea
 
 # Built application files
 *.apk
@@ -34,7 +34,7 @@ gen/
 # Windows thumbnail db
 Thumbs.db
 
-.idea
+.idea/
 build/
 .navigation
 captures/
