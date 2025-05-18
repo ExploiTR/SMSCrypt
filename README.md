@@ -1,8 +1,4 @@
-<!-- Ongoing Project Section -->
-<div style="background-color: #f5f5f5; padding: 20px; border-radius: 10px; margin-bottom: 20px; text-align: center;">
-    <h2 style="color: #333;">🚀 Ongoing Project</h2>
-    <p style="font-size: 16px; color: #555;">This project is actively maintained and in ongoing development. Feel free to check back for updates and improvements! Although the progress is slow because of my lack of bandwidth but it'll not be abandoned.</p>
-</div>
+> # Project archived: While the idea was to make something exceptional, the complexity also has become exceptional and it has become very difficult for me to find time to make this now. I need to design the system better before writing further code - full re-work is needed.
 
 
 # SMSCrypt
